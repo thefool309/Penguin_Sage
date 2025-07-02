@@ -1,12 +1,11 @@
 # Use the official Node.js image as base
-FROM node:18
+FROM node:18-bullseye
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Copy package.json and package-lock.json (if available)
 COPY package.json package-lock.json ./
-
 
 RUN apt-get update && apt-get install -y iproute2
 

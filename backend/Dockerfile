@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18-bullseye
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -6,10 +6,8 @@ WORKDIR /app
 # Copy dependency definitions
 COPY entrypoint.sh package*.json tsconfig.json ./
 
-
 # Install backend dependencies
 RUN npm install
-
 
 # Install nmap and iproute2 necessary dependencies to accomplish proper connections and scanning
 RUN apt-get update && apt-get install -y nmap

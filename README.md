@@ -1,6 +1,8 @@
 # pi_Sage
 
-Welcome to pi_Sage. pi_Sage is currently in a state of active development, and will be until at least the end of May 2025. This is a project I am doing for school, so no contributions will be accepted until I recieve my final grade. Currently this is built for x86_64 architecture, I am working on a aarch64 version for the raspi 5.
+Welcome to pi_Sage. pi_Sage is currently in a state of active development, and will be until at least the end of 2025. This is a project I am doing for school, so no contributions will be accepted until I recieve my final grade. Currently this is built for x86_64 architecture, I am working on a aarch64 version for the raspi 5.
+
+I felt comfortable enough to push a version 1.0.0 but this has proved to be trying to test in a vm, or on the intended product (A raspberry pi 5). I am working on a hotfix that will have it working on the raspberry pi 5s ARM64 architecture.  
 
 please refer to the [wiki](https://github.com/thefool309/pi_Sage/wiki) for further documentation
 

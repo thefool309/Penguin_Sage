@@ -68,3 +68,5 @@ settings.json
 *.tsbuildinfo
 # Project excludes
 example.json
+
+buildscript*
