@@ -1,6 +1,6 @@
-# pi_Sage
+# Penguin_Sage [Warning Instructions May Be Deprecated]
 
-Welcome to pi_Sage. pi_Sage is currently in a state of active development, and will be until at least the end of 2025. This is a project I am doing for school, so no contributions will be accepted until I recieve my final grade. Currently this is built for x86_64 architecture, I am working on a aarch64 version for the raspi 5.
+Welcome to Penguin_Sage. Penguin_Sage is currently in a state of active development, and will be until at least the end of 2025. This is a project I am doing for school, so no contributions will be accepted until I recieve my final grade. Currently this is built for x86_64 architecture, I am working on a aarch64 version for the raspi 5.
 
 I felt comfortable enough to push a version 1.0.0 but this has proved to be trying to test in a vm, or on the intended product (A raspberry pi 5). I am working on a hotfix that will have it working on the raspberry pi 5s ARM64 architecture.  
 
@@ -10,11 +10,11 @@ please refer to the [wiki](https://github.com/thefool309/pi_Sage/wiki) for furth
 
 ***nmap is an open source security tool for scanning ports, that is used by cyber security professionals, and sys admins. There is a lot of controversy around port scanning, so don't do anything to get yourself arrested, or sued. Do not run this software on a network you aren't an admin of, or have expressed permission to scan open ports on. You can read more about [the legal issues surrounding port scanning here](https://nmap.org/book/legal-issues.html). I am not a lawyer however and if you have any real questions surrounding the legality of using nmap you should consult a lawyer.***
 
-## What is pi_Sage?
+## What is Penguin_Sage?
 
- This is currently a web dashboard for the command line tool, [nmap](https://nmap.org/docs.html). The long term goal is to help the user visualize their nmap scans in a way that will make the data easier to digest. pi_Sage is part of an overarching project to develop a raspberry pi based security appliance. This is however a docker managed project, and can be deployed on anything that can run Docker.
+ This is currently a web dashboard for the command line tool, [nmap](https://nmap.org/docs.html). The long term goal is to help the user visualize their nmap scans in a way that will make the data easier to digest. Penguin_Sage is part of an overarching project to develop a raspberry pi based security appliance. This is however a docker managed project, and can be deployed on anything that can run Docker.
 
-## How do I use pi_Sage?
+## How do I use Penguin_Sage?
 
  Currently I have only tested this software on linux based systems. For more information on using docker and docker compose, please consult the [docker documentation](https://docs.docker.com/).
 

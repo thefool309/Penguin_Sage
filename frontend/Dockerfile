@@ -10,7 +10,7 @@ COPY package.json package-lock.json ./
 RUN apt-get update && apt-get install -y iproute2
 
 # Install dependencies
-RUN npm install
+RUN npm install --omit=optional
 
 # Copy the rest of your project files
 COPY . .

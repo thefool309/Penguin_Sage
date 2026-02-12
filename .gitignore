@@ -69,4 +69,4 @@ settings.json
 # Project excludes
 example.json
 
-buildscript*
+build-multiarch*
