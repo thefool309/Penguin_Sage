@@ -27,12 +27,11 @@ export async function parseAndSaveScan(filePath: string): Promise<null | any> {
   try {
     let jsonData = await parseJson(filePath);
 
-    // create a Scan entry for the database
-
     const runstats = jsonData.nmaprun?.runstats[0];
     if (!runstats) throw new Error("Missing runstats\n");
     const runHosts = runstats.hosts[0].$;
     const fin = runstats.finished[0].$;
+    // create a Scan entry for the database
     const scan = await Scan.create({
       scan_results: jsonData,
       duration: parseFloat(fin.elapsed),
@@ -47,9 +46,11 @@ export async function parseAndSaveScan(filePath: string): Promise<null | any> {
     //  For each host in scan create a host entry in the database
 
     for (const host of hosts) {
+      const hostStatus =
+        host.status?.find((s: any) => s.$?.state === "up") || host.status[0];
       const newHost = await Host.create({
         scanId: scan.id,
-        status: host.status[0].$.state,
+        status: hostStatus.$.state,
         reason: host.status[0].$.reason,
         reason_ttl: parseInt(host.status[0].$.reason_ttl, 10),
         addr: host.address[0].$.addr,

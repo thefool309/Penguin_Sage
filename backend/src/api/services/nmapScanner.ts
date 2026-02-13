@@ -17,7 +17,7 @@ export async function deleteXmlFile(filePath: string): Promise<void> {
 
 export async function runNmap(
   _target: string | undefined,
-  _args?: string[] | undefined
+  _args?: string[] | undefined,
 ): Promise<string> {
   return new Promise((resolve, reject) => {
     if (_target == undefined) {

@@ -6,7 +6,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 <template>
   <header>
     <img
-      alt="Vue logo"
+      alt="Penguin_Sage Logo"
       class="logo"
       src="@/assets/penguin.png"
       width="125"
@@ -14,7 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     />
 
     <div class="wrapper">
-      <HelloWorld msg="pi_Sage" />
+      <HelloWorld msg="Penguin_Sage" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
