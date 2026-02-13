@@ -29,8 +29,14 @@ export async function listScans(req: Request, res: Response): Promise<any> {
   });
   return res.json(scans);
 }
+interface ScanParams {
+  id: string;
+}
 
-export async function getScan(req: Request, res: Response): Promise<any> {
+export async function getScan(
+  req: Request<ScanParams>,
+  res: Response,
+): Promise<any> {
   const scan = await Scan.findByPk(req.params.id, {
     attributes: ["id", "date", "host_up", "host_down"],
     include: [
